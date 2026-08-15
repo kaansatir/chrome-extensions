@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      width: 320px;
+      padding: 10px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      background-color: #f9f9f9;
+    }
+    h3 {
+      margin-top: 0;
+      color: #ff0000;
+    }
+    .instruction {
+      font-size: 12px;
+      color: #555;
+      margin-bottom: 15px;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      background-color: #ff0000;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    button:hover {
+      background-color: #cc0000;
+    }
+    textarea {
+      width: 100%;
+      height: 200px;
+      resize: vertical;
+      box-sizing: border-box;
+      padding: 8px;
+      font-family: monospace;
+      font-size: 12px;
+    }
+  </style>
+</head>
+<body>
+  <h3>Playlist Extractor</h3>
+  <div class="instruction">
+    <strong>Note:</strong> Scroll to the very bottom of the playlist page first so all videos load into view!
+  </div>
+  <button id="extractBtn">Extract Links</button>
+  <textarea id="results" placeholder="Links will appear here..."></textarea>
+  <script src="popup.js"></script>
+</body>
+</html>

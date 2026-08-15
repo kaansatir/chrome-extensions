@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Anti-Translate",
+  "version": "1.0",
+  "description": "Reverts YouTube video titles to their original language and forces the original audio track.",
+  "permissions": [
+    "scripting"
+  ],
+  "host_permissions": [
+    "*://*.youtube.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_end",
+      "world": "MAIN" 
+    }
+  ]
+}
